@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -174,7 +174,7 @@
 
         SCROLL {
             bindings = <
-&kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                                         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MULTIPLY  &kp KP_PLUS
+&kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &kp LANG2                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MULTIPLY  &kp KP_PLUS
 &kp LA(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp LA(RIGHT)                                  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL        &kp KP_MINUS
 &kp HOME            &kp LC(PAGE_UP)         &kp END       &kp LC(PAGE_DOWN)        &kp LA(F4)                                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER        &kp ENTER
 &kp LEFT_SHIFT      &kp LEFT_WIN            &trans        &trans                   &trans         &kp LC(LS(TAB))    &kp LC(TAB)  &kp NUMBER_0                &kp NUMBER_0  &kp DOT          &kp QUESTION
@@ -196,10 +196,10 @@
 
         windows_arrows {
             bindings = <
-&kp LANG2  &kp LANG1  &kp END        &kp LANG2  &trans                      &trans    &trans  &trans  &trans  &kp UP
-&kp HOME   &kp LANG2  &kp BACKSPACE  &kp RIGHT  &trans                      &trans    &trans  &trans  &trans  &trans
-&trans     &trans     &trans         &trans     &kp LEFT                    &kp DOWN  &trans  &trans  &trans  &trans
-&trans     &trans     &trans         &trans     &trans    &trans    &trans  &trans            &trans  &trans  &trans
+&trans    &kp LANG1  &kp END        &kp LANG1  &trans                      &trans    &trans  &trans  &trans  &kp UP
+&kp HOME  &trans     &kp BACKSPACE  &kp RIGHT  &trans                      &trans    &trans  &trans  &trans  &trans
+&trans    &trans     &trans         &kp LG(V)  &kp LEFT                    &kp DOWN  &trans  &trans  &trans  &trans
+&trans    &trans     &trans         &trans     &trans    &trans    &trans  &trans            &trans  &trans  &trans
             >;
         };
     };
