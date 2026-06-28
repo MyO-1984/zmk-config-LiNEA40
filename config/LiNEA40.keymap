@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -197,7 +197,7 @@
         windows_arrows {
             bindings = <
 &trans    &kp LANG1  &kp END        &kp LANG1  &trans                      &trans    &trans  &trans  &trans  &kp UP
-&kp HOME  &kp HOME   &kp BACKSPACE  &kp RIGHT  &trans                      &trans    &trans  &trans  &trans  &trans
+&kp HOME  &kp HOME   &kp BACKSPACE  &kp RIGHT  &trans                      &trans    &trans  &trans  &trans  &kp MINUS
 &trans    &trans     &trans         &kp LG(V)  &kp LEFT                    &kp DOWN  &trans  &trans  &trans  &trans
 &trans    &trans     &trans         &trans     &trans    &trans    &trans  &trans            &trans  &trans  &trans
             >;
