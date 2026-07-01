@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -177,7 +177,7 @@
 &kp LG(TAB)         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW     &kp LC(LG(RIGHT_ARROW))  &kp LANG2                                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp MINUS
 &kp LA(LEFT_ARROW)  &kp LC(PAGE_UP)         &kp DOWN         &kp LC(PAGE_DOWN)        &kp LA(RIGHT)                                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp SLASH
 &kp LS(HOME)        &kp LC(LS(V))           &kp LC(C)        &kp LC(V)                &kp LA(F4)                                       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UNDER        &kp EQUAL
-&kp LS(END)         &kp LEFT_WIN            &kp LC(LS(TAB))  &trans                   &kp LC(TAB)    &kp LC(LS(TAB))    &kp LC(ENTER)  &kp KP_NUMBER_0                   &kp NUMBER_0     &kp LEFT_SHIFT   &kp PERCENT
+&kp LS(END)         &kp LEFT_WIN            &kp LC(LS(TAB))  &trans                   &kp LC(TAB)    &kp LC(LS(TAB))    &kp BACKSPACE  &kp KP_NUMBER_0                   &kp NUMBER_0     &kp LEFT_SHIFT   &kp PERCENT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
